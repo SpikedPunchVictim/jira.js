@@ -1,9 +1,9 @@
 {
-  "name": "jira.js",
+  "name": "@spikedpunch/jira.js",
   "version": "2.0.2",
   "main": "out/index.js",
   "types": "out/index.d.ts",
-  "repository": "https://github.com/MrRefactoring/jira.js.git",
+  "repository": "https://github.com/SpikedPunchVictim/jira.js",
   "author": "Vladislav Tupikin <mrrefactoring@yandex.ru>",
   "license": "MIT",
   "keywords": [
@@ -55,7 +55,6 @@
   "dependencies": {
     "atlassian-jwt": "^1.0.3",
     "axios": "^0.21.1",
-    "oauth": "^0.9.15",
-    "telemetry.jira.js": "*"
+    "oauth": "^0.9.15"
   }
 }

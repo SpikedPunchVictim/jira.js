@@ -1,5 +1,4 @@
 import { AxiosError } from 'axios';
-import type { TelemetryConfig } from 'telemetry.jira.js';
 import { UtilityTypes } from './utilityTypes';
 import { RequestConfig } from './requestConfig';
 
@@ -10,13 +9,11 @@ export interface Config {
   baseRequestConfig?: Config.BaseRequestConfig;
   authentication?: Config.Authentication;
   middlewares?: Config.Middlewares;
-  telemetry?: Config.Telemetry;
 }
 
 export namespace Config {
   export type BaseRequestConfig = RequestConfig;
   export type Error = AxiosError;
-  export type Telemetry = boolean | TelemetryConfig;
 
   export type Authentication = UtilityTypes.XOR<{
     jwt: Authentication.JWT;

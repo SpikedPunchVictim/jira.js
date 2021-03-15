@@ -9,6 +9,10 @@
   <span>JavaScript / TypeScript library for Node.JS and browsers to easily interact with Atlassian Jira API</span>
 </div>
 
+## Note
+
+This repository is forked from the `https://github.com/MrRefactoring/jira.js` repo. The original repo contains potentially malicious sending of "telemetry" data, imported through a separate package. This allows the user to update the "telemetry" package without allowing the user to lock in the current version of the telemetry library, or control when "telemetry" data is sent. Sending this data could give the author access (and potentially full control) of your JIRA server.
+
 ## About
 
 jira.js is a powerful [Node.JS](https://nodejs.org/) / Browser module that allows you to interact with the [Jira API](https://developer.atlassian.com/cloud/jira/platform/rest/) very easily.
@@ -18,17 +22,20 @@ Usability, consistency, and performance are key focuses of jira.js, and it also 
 
 ## Table of contents
 
+- [Note](#note)
+- [About](#about)
+- [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Telemetry information collection agreement](#telemetry-information-collection-agreement)
-  - [Customizing telemetry collection data example](#customizing-telemetry-collection-data-example)
-  - [Disabling telemetry collection example](#disabling-telemetry-collection-example)
+    - [Customizing telemetry collection data example](#customizing-telemetry-collection-data-example)
+    - [Disabling telemetry collection example](#disabling-telemetry-collection-example)
 - [Usage](#usage)
-  - [Authentication](#authentication)
-    - [Basic](#basic-authenticationhttpsdeveloperatlassiancomcloudjiraplatformbasic-auth-for-rest-apis)
-    - [OAuth](#oauth)
-    - [OAuth 2.0](#oauth-20)
-    - [JWT](#jwt)
-  - [Your first request and using algorithm](#your-first-request-and-using-algorithm)
+    - [Authentication](#authentication)
+      - [Basic authentication](#basic-authentication)
+      - [OAuth](#oauth)
+      - [OAuth 2.0](#oauth-20)
+      - [JWT](#jwt)
+    - [Your first request and using algorithm](#your-first-request-and-using-algorithm)
 - [Decreasing Webpack bundle size](#decreasing-webpack-bundle-size)
 - [Take a look at our other products](#take-a-look-at-our-other-products)
 - [License](#license)
